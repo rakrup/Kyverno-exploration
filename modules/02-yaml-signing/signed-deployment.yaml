@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    cosign.sigstore.dev/message: H4sIAAAAAAAA/1yPPY4DIQyFe07hC8zszu4WK+qUKVKldxhrggLGAitKbh+hzA8ZV4De9/GM4s+Ui09sAUXK130wN8+jhQNJSM9IrCaS4oiK1gAEvFAo9QQVsMCT54cBYIw037pxY4uQq+lMErzDYuHXABQK5DTltyeiuuuxEe/USlECKs3ppk2d8AHuUIClQB2XWNEz5TXegY84LcXt0A9//c+qanZa3yRlbX7rNukpZbXw/21eAQAA//8vld/kVQEAAA==
+    cosign.sigstore.dev/signature: MEQCIGu1p+jzwkNWBj6hAJOxPkLul598NyRPJs5/UCHs2x4WAiBXSdWNIq7nUjwKUgH5iJHAbgzsiMbMpgBhwQ2l7f1QCw==
+  labels:
+    app: nginx
+  name: nginx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - image: nginx:1.14.2
+        name: nginx
+        ports:
+        - containerPort: 80

@@ -6,14 +6,13 @@ In the [prerequisites](./../00-prerequisites/README.md#generate-keypair) step, w
 
 To sign the container image,
 ```sh
-cd keys
 nctl images cosign sign --key cosign.key <image>
 ```
 
 This will sign the container image and push it to the registry. Both the image and the signature are saved as OCI artifacts in the registry.
 
 ## Verify image signatures
-Now that we have signed the container image, we will now verify its signature before deploying to the cluster. Refer to the policy [image-verify-policy.yaml](./image-verify-policy.yaml). Make sure to replace the public key and registry name in the policy YAML.
+Now that we have signed the container image, we will now verify its signature before deploying to the cluster. Refer to the policy [image-verify-policy.yaml](./image-verify.yaml). Make sure to replace the public key and registry name in the policy YAML.
 Apply the policy using,
 ```sh
 kubectl apply -f image-verify-policy.yaml
