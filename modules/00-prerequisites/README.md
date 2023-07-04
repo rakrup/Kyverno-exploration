@@ -7,10 +7,25 @@ The Nirmata CLI (nctl) can be used for registering clusters, image and YAML mani
 ```sh
 curl -sL https://raw.githubusercontent.com/nirmata/kyverno-charts/main/scripts/n4k/nctl-install.sh | sh
 ```
-
 Verify installation using,
 ```sh
 nctl version
+```
+
+## Generate keypair
+For the image signing and YAML signing modules, we will need a public-private keypair. Create a new directory called `keys`.
+```sh
+mkdir keys
+cd keys/
+```
+Now we will generate the keypair. Enter the password for private key and it will be created in the `keys` directory.
+```sh
+nctl images cosign generate-key-pair
+```
+Verify that keys are generated.
+```sh
+ls
+cosign.key cosign.pub
 ```
 
 ## Create Cluster
