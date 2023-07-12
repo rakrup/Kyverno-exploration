@@ -9,11 +9,13 @@ spec:
     ruleNames:
     - host-namespaces
     - autogen-host-namespaces
+    - "*"
   match:
     any:
     - resources:
         kinds:
         - Pod
         - Deployment
+        - "*"
         namespaces:
         - delta
