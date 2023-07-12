@@ -13,6 +13,7 @@ PSA is the technology which implements the Pod Security Standards (PSS). Those s
 
 ### Granular PSA controls
 With PSA, it is all or nothing. Either you apply a profile (baseline or restricted), or you do not. Kyverno integrates with PSA and allows you finer access to controls (via `subrule`). While you can specify baseline control using PSA, you can specify any particular control(s) that need to be excluded, instead of disabling the entire profile itself.
+[Nirmata's Implementation of PSA](https://github.com/nirmata/kyverno-policies/tree/main/pod-security)
 
 ### Reporting with Nirmata
 Policy Reports in Nirmata powered by the [PolicyReport CRD](https://kyverno.io/docs/policy-reports/), a Kubernetes-native resource which is an open standard developed by the upstream [Kubernetes policy working group](https://github.com/kubernetes-sigs/wg-policy-prototypes/tree/master/policy-report) and adopted by many other tools.
@@ -35,5 +36,5 @@ All the above checks can be done in CI pipelines as well. Nirmata offers a compr
 |No exclusions	| Limited exclusions	| Flexible exclusions
 |Integrated	| Integrated	| External
 
-\* No readOnlyRootFilesystem, runtimeClass (excludes deprecated options)
+\* No readOnlyRootFilesystem, runtimeClass (excludes deprecated options)__
 \** Audit support only

@@ -17,5 +17,3 @@ spec:
         - Deployment
         namespaces:
         - delta
-        names:
-        - important-tool*
