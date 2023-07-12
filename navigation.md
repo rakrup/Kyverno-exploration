@@ -3,7 +3,7 @@
 In this repo we have highly classified Kyverno Uecases in 6 broad Catergories. 
 Here is the list of categories and Subcategories on use-cases you could solve with Kyverno
 
-Before trying/reading the document, Good to go through the [prerequsites](./modules/00-prerequisites/) 
+Before trying/reading the document, Good to go through the [prerequisites](./modules/00-prerequisites/) 
 
   1. [Core Policy Enforcements](./modules/01-policy-core/)
      1. Validation
