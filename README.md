@@ -14,12 +14,12 @@ Evaluating Kyverno and what is offers.
     a. Fuzzing and third-party security audit in progress
 3. Backed by [Nirmata](https://nirmata.com)
 4. Kyverno stats
-    a. **Image pulls**: 2.12 B
-    b. **GitHub stars**: ~4,100
-    c. **Slack community**: ~2,400 members across two channels/workspaces
-    d. **Monthly active contributors**: ~100+
-    e. **Maintainers**: 7+
-    f. **Releases**: 175 releases
+   1.  **Image pulls**: 2.12 B
+   2.  **GitHub stars**: ~4,100
+   3.  **Slack community**: ~2,400 members across two channels/workspaces
+   4.  **Monthly active contributors**: ~100+
+   5.  **Maintainers**: 7+
+   6.  **Releases**: 175 releases
 
 #### Key Links: 
 
@@ -63,8 +63,7 @@ Detailed blog post here - [Using Kyveno with Pod Security Admission](https://kyv
 ## Potential value for companies adopting Kyverno/Nirmata
 1. Implement best practices for Kubernetes configurations
 2. Consistent approach to perform security audits for multi-cluster and multi-cloud
-3. Interoperability with existing open source tooling used within the firm
-a. Crossplane, Open Cost &lt;any other CNCF projects used&gt;
+3. Interoperability with existing open source tooling - Crossplane, Open Cost any other CNCF projects;
 4. Teams using OPA can either continue to leverage existing knowledge base or move to Kyverno or continue with co-existence of both tools & its [possible integration](https://kyverno.io/blog/2023/05/30/kyverno-1.10-released/#extensibility-via-external-service-calls) 
 
 ### OPA vs Kyverno
@@ -73,34 +72,34 @@ Performance tests - [Scaling with Kyverno](https://kyverno.io/docs/installation/
 
 Policies Complexity in Kyverno - While authoring Kyverno policies is simpler compared to OPA Gatekeeper, one can get really creative and write complex policies.
 1. JMESPath
-    a. config-syncer-secret-generation-from-rancher-capi
-    b. argo-cluster-generation-from-rancher-capi
-    c. Require-unique-uid-per-workload
+   1.  config-syncer-secret-generation-from-rancher-capi
+   2.  argo-cluster-generation-from-rancher-capi
+   3.  Require-unique-uid-per-workload
 2. [Make external service API calls](https://kyverno.io/blog/2023/05/30/kyverno-1.10-released/#extensibility-via-external-service-calls)
 
 ## Kyverno Open Source vs Nirmata Policy Manager
 [Nirmata Policy Manager (NPM)](https://nirmata.com/nirmata-cloud-native-policy-manager/) is a SaaS offering by Nirmata. While it is powered by Kyverno,
 NPM has additional capabilities for -
 1. Enterprise Kyverno distribution
-    a. Long Term Support (LTS) for Kyverno and Kubernetes versions
-    b. Backport of fixes to all LTS versions (open-source supports only n-2 versions)
-    c. Assistance in curating policies relevant to various groups within the firm
-    d. Kyverno Operator for lifecycle management of Kyverno and policies
-    e. Variety of adapter integrations for AWS, Image scanning, Venafi, etc.
-    f. Tamper prevention and self-healing for policies and policy engine
-    g. Secure distribution of policies via OCI (roadmap)
+   1.  Long Term Support (LTS) for Kyverno and Kubernetes versions
+   2.  Backport of fixes to all LTS versions (open-source supports only n-2 versions)
+   3.  Assistance in curating policies relevant to various groups within the firm
+   4.  Kyverno Operator for lifecycle management of Kyverno and policies
+   5.  Variety of adapter integrations for AWS, Image scanning, Venafi, etc.
+   6.  Tamper prevention and self-healing for policies and policy engine
+   7.  Secure distribution of policies via OCI (roadmap)
 2. Advanced dashboarding to provide quick summary of the security posture across your fleet of clusters
 3. Built-in compliance standards for industry best practices (CIS, NIST, PCI, etc.)
 4. Support for custom compliance standards mapping to policies
 5. Collaboration workflows across dev, sec, and ops teams
-    a. Violations assignment and namespace ownership
-    b. Time based policy exceptions
-    c. Policy tamper detection and prevention
+   1. Violations assignment and namespace ownership
+   2. Time based policy exceptions
+   3. Policy tamper detection and prevention
 6. Nirmata CLI integration in CI/CD pipelines
-    a. Example - GitHub actions, Tekton CD etc.
+   1. Example - GitHub actions, Tekton CD etc.
 7. Remediation suggestions for policy violations
 8. Integration with service management tools like JIRA, Slack, GitHub, etc.
-9. Identity and Access Management
+9.  Identity and Access Management
 10. Alerting and monitoring capabilities
 
 ### NPM Roadmap
@@ -108,7 +107,7 @@ Some of the advanced feature highlights in the roadmap are -
 1. Evidence gathering support for compliance failures
 2. Support for IAC pipelines i.e. Terraform
 3. Integration with non-Kubernetes-native use-cases
-a. Example - ECS, Fargate
+   1. Example - ECS, Fargate
 
 4. Automated Remediation of violations
 5. Integrations with image scan reports, SBOMs etc.
