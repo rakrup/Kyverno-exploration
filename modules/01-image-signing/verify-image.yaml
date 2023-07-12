@@ -16,7 +16,7 @@ spec:
               - Pod
       verifyImages:
       - imageReferences:
-        - "ghcr.io/kyverno/test-verify-image*"
+        - "*rakrup*"
         attestors:
         - count: 1
           entries:

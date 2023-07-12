@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: myapp-deployment
   labels:
-    app: nginx
+    app: myapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx
+      app: myapp
   template:
     metadata:
       labels:
-        app: nginx
+        app: myapp
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: myimage
+        image: rakrup/kyverno-sign-test:unsigned
         ports:
-        - containerPort: 80
+        - containerPort: 8000

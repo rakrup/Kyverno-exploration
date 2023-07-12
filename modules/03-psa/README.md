@@ -19,3 +19,21 @@ Policy Reports in Nirmata powered by the [PolicyReport CRD](https://kyverno.io/d
 
 ### Nirmata CLI in pipelines
 All the above checks can be done in CI pipelines as well. Nirmata offers a comprehensive CLI (`nctl`) that can be used to validate resources against Pod Security Standard Baseline and Restricted profiles enforced by PSA. You do not need a working cluster for using in the CI pipelines (unlike PSA, which requires a functional cluster)
+
+## Comparison
+
+| Pod Security Policy	| Pod Security Admission	| Kyverno |
+|-----------------------|---------------------------|-----------|
+|Pods only	|Pods only	|Anything|
+|Limited options	|Only 2 options (PSS only, gaps*)	|Anything
+|Limited mutation	|No mutation	|Mutate anything
+|Requires RBAC modifications	| Does not require RBAC	| Does not require RBAC
+|Limited to User, Group, ServiceAccount	| Limited to cluster, Namespace	| Any association
+|No support for Pod controllers	| No support for Pod controllers**	| Automatic support for Pod controllers
+|No auditing	| Audits in audit log	| Audits in Policy Reports
+|No message customization	| No message customization	| Fully custom messages
+|No exclusions	| Limited exclusions	| Flexible exclusions
+|Integrated	| Integrated	| External
+
+\* No readOnlyRootFilesystem, runtimeClass (excludes deprecated options)
+\** Audit support only
