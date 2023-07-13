@@ -2,6 +2,11 @@
 
 ## Policy Exceptions - A background
 
+Policy exceptions is the required evil in every policy heavy industry.
+
+While timed exceptions pave way for unblocking development efforts typically requires lot of manual oversight. The major drawback of providing excpetions is that in a big firm, often people take time to collate,track and view every exceptions that has been granted.
+
+Bring in a structured approach to code policy exceptions helps managing and automating(say timed exceptions) policy exceptions much better.
 
 ## Kyverno - Policy Exceptions
 
