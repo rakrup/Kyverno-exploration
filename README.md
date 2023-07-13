@@ -5,6 +5,10 @@ Evaluating Kyverno and what is offers.
 > **Note**
 > If you are new to Kyverno - it would be good to go through a little introduction below. If you have already read about Kyverno - you can [read about usecases you could solve with Kyverno](./navigation.md).
 
+## Navigation
+
+[Kyverno Capabilities](./navigation.md)
+
 ## What is Kyverno ?
 
 ![kyverno_logo](./modules/00-prerequisites/images/kyverno%20logo.png)

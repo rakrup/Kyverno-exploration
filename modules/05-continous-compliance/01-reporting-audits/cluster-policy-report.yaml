@@ -1,0 +1,28 @@
+apiVersion: wgpolicyk8s.io/v1alpha2
+kind: ClusterPolicyReport
+metadata:
+  creationTimestamp: "2022-10-18T11:55:20Z"
+  generation: 1
+  labels:
+    app.kubernetes.io/managed-by: kyverno
+  name: cpol-require-ns-labels
+  resourceVersion: "950"
+  uid: 6dde3d0d-d2e8-48d9-8b56-47b3c5e7a3b3
+results:
+- category: Best Practices
+  message: 'validation error: The label `team` is required. rule check-for-ns-labels
+    failed at path /metadata/labels/team/'
+  policy: require-ns-labels
+  resources:
+  - apiVersion: v1
+    kind: Namespace
+    name: kube-node-lease
+    uid: 06e5056f-76a3-461a-8d45-2793b8bd5bbc
+  result: fail
+  rule: check-for-ns-labels
+  scored: true
+  severity: medium
+  source: kyverno
+  timestamp:
+    nanos: 0
+    seconds: 1666094105
