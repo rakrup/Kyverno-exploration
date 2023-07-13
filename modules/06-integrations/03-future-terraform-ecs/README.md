@@ -1,0 +1,3 @@
+# Features that can be added via Kyverno
+
+Kyverno is a JSON validating engine. So if we can provide terraform state or ECS task definition json to our Kyverno controller, we can write Kyverno policies to audit/enfore certain best practices. We can write an AWS adapter which can push the json to Kubernetes cluster where we have the Kyverno controller and then controller can validate the mentioned objects with configured policies.
