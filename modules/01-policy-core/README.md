@@ -7,10 +7,10 @@ A Kyverno policy is a collection of rules. Each rule consists of a match declara
 
 ## Kyverno Policy Categories
 
-1. [Validation](./01-validation/)
-2. [Mutatation](./02-mutation/)
-3. [Generation](./03-generation/)
-4. [CleanUp](./04-cleanup/)
+1. [Validation](./01-validation/README.md)
+2. [Mutatation](./02-mutation/README.md)
+3. [Generation](./03-generation/README.md)
+4. [CleanUp](./04-cleanup/README.md)
 
 > **Note**
 > A permuation and combination of these policies can help eliminate the need of writing operators/controllers for many usecases. These would help the firm in

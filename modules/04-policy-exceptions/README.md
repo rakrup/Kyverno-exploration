@@ -1,5 +1,10 @@
 # Policy Exceptions
 
+## Policy Exceptions - A background
+
+
+## Kyverno - Policy Exceptions
+
 One of Kyverno's USP is the fine grained control to resources and policies. Although Kyverno provides the `match`/`exclude` blocks to filter resources, Policy Exceptions come in handy when policies may not be directly editable, or doing so imposes an operational burden.
 
 **Note:** Policy Exceptions are available only in Kyverno 1.9 and above.
