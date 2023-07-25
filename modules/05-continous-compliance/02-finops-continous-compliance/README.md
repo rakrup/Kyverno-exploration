@@ -1,5 +1,7 @@
 # FinOps - Continous Compliance
 
+[Go back of Main Menu](../../navigation.md)
+
 ## Integration with Cost Management tools
 Kyverno integrates with yet another CNCF project, [OpenCost](https://github.com/opencost/opencost) to enforce policies for allocating resources in Kubernetes that helps in managing costs for any organization. See detailed blog post [here](https://nirmata.com/2023/05/24/policy-based-cost-management-in-kubernetes-leveraging-opencost-and-kyverno-for-maximum-efficiency/)
 
@@ -51,3 +53,5 @@ We will use the Nirmata-curated policies for the controls specified by AWS.
 git clone git@github.com:nirmata/kyverno-policies.git
 cd kyverno-policies
 kubectl apply -f eks-best-practices/
+
+[Go back of Main Menu](../../navigation.md)

@@ -1,5 +1,7 @@
 # Value additions in Kubernetes using Kyverno
 
+[Go back of Main Menu](../../navigation.md)
+
 Kyverno being Kubernetes-native, provides a lot of value additions on a Kubernetes cluster. They have certain [policy-sets](https://release-3-5-4.docs.nirmata.io/npmk/policy_groups/) which can be added to the clusters and directly add those features in the cluster. It can also implements the functionality of validating and mutating webhooks.
 
 ## Use cases
@@ -12,3 +14,5 @@ Kyverno has the ability to ease the implementations of multitenancy and ease the
 3. [EKS Best Practices](../05-continous-compliance/02-finops-continous-compliance/README.md#eks-best-practices)- A comprehensive list of recommendations and best practices for securing EKS clusters is published by AWS [here](https://aws.github.io/aws-eks-best-practices/security/docs/).
 
 **Note**: Kyverno can be extended to other resources via Custom Resource Definition (CRD) and controllers. Because EKS Best Practices includes enforcing/auditing for cloud resources, we can use the [Kyverno AWS Adapter](https://github.com/nirmata/kyverno-aws-adapter) by Nirmata. See detailed blog post [here](https://nirmata.com/2023/04/04/enforcing-security-best-practices-for-amazon-eks-using-kyverno/).
+
+[Go back of Main Menu](../../navigation.md)

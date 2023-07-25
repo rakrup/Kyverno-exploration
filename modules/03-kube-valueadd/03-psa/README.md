@@ -36,5 +36,6 @@ All the above checks can be done in CI pipelines as well. Nirmata offers a compr
 |No exclusions	| Limited exclusions	| Flexible exclusions
 |Integrated	| Integrated	| External
 
-\* No readOnlyRootFilesystem, runtimeClass (excludes deprecated options)__
+\* No readOnlyRootFilesystem, runtimeClass (excludes deprecated options)
+
 \** Audit support only

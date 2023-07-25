@@ -1,5 +1,7 @@
 # Kyverno - Core Policy Engine
 
+[Go back of Main Menu](../../navigation.md)
+
 A Kyverno policy is a collection of rules. Each rule consists of a match declaration, an optional exclude declaration, and one of a validate, mutate, generate, or verifyImages declaration. Each rule can contain only a single validate, mutate, generate, or verifyImages child declaration.
 
 ## Kyverno Policy Engine
@@ -18,3 +20,7 @@ A Kyverno policy is a collection of rules. Each rule consists of a match declara
 > 2. **Enhancing manageability** - an controller/operator is replaced by one/multiple manifests
 > 3. **Better security** - Operators typically require elevated privilages, avoiding them would improve overall security posture
 > 4. **Better resource utilization/cost effective** - we would avoid multiple controller/operator pods running to support the usecases.
+
+
+
+[Go back of Main Menu](../../navigation.md)

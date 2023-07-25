@@ -7,7 +7,7 @@ Evaluating Kyverno and what is offers.
 
 ## Navigation
 
-[Kyverno Capabilities](./navigation.md)
+[Repo Naviation - Main Menu](./navigation.md)
 
 ## What is Kyverno ?
 
