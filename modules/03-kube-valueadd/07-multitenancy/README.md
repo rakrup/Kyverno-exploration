@@ -15,3 +15,8 @@ Today, this is done at cluster level in single tenant cluster. But user needs to
 Kubernetes Namespaces are an optional feature that provide a way to segment and isolate cluster resources across multiple applications and users. As a best practice, workloads should be isolated with Namespaces. Namespaces should be required and the default (empty) Namespace should not be used. This policy validates that Pods specify a Namespace name other than `default`. Rule auto-generation is disabled here due to Pod controllers need to specify the `namespace` field under the top-level `metadata` object and not at the Pod template level.
 This policy can be used to restrict all the platform namespaces.
 Reference- [disallow-default-namespace.yaml](./disallow-default-namespace.yaml).
+
+
+## Demo 
+
+A video demo demonstrating Kyverno's multi-tenant capability -> [https://www.youtube.com/watch?v=WzjNm1RUthk](https://www.youtube.com/watch?v=WzjNm1RUthk)

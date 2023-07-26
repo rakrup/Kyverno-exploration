@@ -2,6 +2,10 @@
 
 [Go back of Main Menu](../../navigation.md)
 
+## Kyverno for Fintechs
+
+Whitepaper on how is currently [solving fintech challenges in real world](https://nirmata.com/2023/07/20/strengthening-governance-and-security-in-financial-institutions-with-policy-as-code-and-kyverno/).
+
 ## Integration with Cost Management tools
 Kyverno integrates with yet another CNCF project, [OpenCost](https://github.com/opencost/opencost) to enforce policies for allocating resources in Kubernetes that helps in managing costs for any organization. See detailed blog post [here](https://nirmata.com/2023/05/24/policy-based-cost-management-in-kubernetes-leveraging-opencost-and-kyverno-for-maximum-efficiency/)
 
